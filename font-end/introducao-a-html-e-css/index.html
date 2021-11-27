@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Document</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .header{
+                background-color: #ffffff;
+                box-shadow: 0 0 5px #474747;
+                height: 80px;
+                position: relative;
+            }
+            #titulo{
+               float: right;
+                font-size: 15px;
+                margin: 30px 50px 0 0;
+                font-family: monospace;
+                color: rgb(126, 126, 126);
+            }
+            .nav-menu{
+                clear: both;
+                max-width: 400px;
+                height: 40px;
+                box-sizing: border-box;
+                position: absolute;
+                top: 20px;
+                left: 30px;
+                
+            }
+            .nav-menu ul{
+                
+            }
+            .nav-menu li{
+                display: inline-block;
+                margin: 20px 30px;
+               
+                
+            }
+            .nav-menu a{
+                color: #020202;
+               text-decoration: none;
+               font-weight: bold;
+               font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .nav-menu a:hover{
+                color:rgb(231, 217, 20);
+            }
+            .article{
+                width: 100%;
+            }
+            .article img{
+                width: 100%;
+                filter: brightness(0.5);
+            }
+            .article__section:nth-child(2){
+                font-size: 25px;
+                width: 60%;
+                margin: 50px auto;
+             
+            }
+            .subtitulo{
+                color: rgb(31, 30, 26);
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                margin: 30px 0;
+            }
+            .paragrafo{
+                color: #474747;
+                letter-spacing: 2px;
+                line-height: 35px;
+                font-size: 20px;
+            }
+            .article__section:nth-child(3){
+                width: 100%;
+                margin: 250px 50px;
+            }
+            .content{
+               width: 50%;
+               margin: 100px auto;
+            }
+            .content .subtitulo{
+                font-size: 35px;
+                color: rgb(27, 27, 23);
+            }
+            .article__section:nth-child(3){
+                width: 50%;
+                height: 700px;
+                margin: 70px 70px;
+                border-radius: 20px;
+            }
+           
+            .effect-paralax{
+                width: 100%;
+                height: 500px;
+                background-image: url('./02.jpg');
+                background-size: cover;
+                background-attachment: fixed;
+                margin: 100px 0;
+            }
+            .tbl-classificacion{
+                position: relative;
+                width: 600px;
+
+                min-height: 100px;
+                margin: 50px auto;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                border-collapse: collapse;
+                border-radius: 10px;
+                
+            }
+            .tbl-classificacion caption{
+                background-color: #000000;
+                font-size: 25px;
+                color: #fff;
+                font-weight: bold;
+                letter-spacing: 2px;
+                padding: 10px 0;
+            }
+            .tbl-classificacion th{
+                background-color: #000000;
+                padding: 10px 20px;
+                color: #fff;
+            }
+            .tbl-classificacion tbody td{
+                background-color: #fff;
+                text-align: center;
+                padding: 20px 5px;
+            }
+            .tbl-classificacion tfoot td{
+                background-color: rgb(139, 139, 139);
+                padding: 15px 20px;
+            }
+            .tbl-classificacion tfoot a{
+                font-weight: bold;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: #fff;
+            }
+            .content2{
+             background-color: rgb(0, 0, 0);
+             width: 100%;
+             min-height: 1600px;
+             box-shadow: -3px -3px 10px rgb(2, 2, 1);
+            }
+            .content2 .article__section{
+                color: #fff;
+                width: 25%;
+                display: inline-block;
+               margin: 100px 54px;
+            }
+            .content2 .article__section:nth-child(1){
+                position: relative;
+                bottom: 45px;
+            }
+            .content2 .subtitulo{
+                color: #fff;
+                font-size: 55px;
+                text-align: center;
+            }
+            .content2 .paragrafo{
+                color: #fff;
+                text-align: center;
+            }
+            .content2 img{
+                height: 300px;
+                border-radius: 100%;
+                vertical-align: middle;
+            }
+            .bold{
+                font-weight: bold;
+                color: yellow;
+            }
+            .content2-subititulo{
+                color: #fff;
+                font-size: 50px;
+                text-align: left;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin-left: 50px;
+                position: relative;
+                top: 50px;
+            }
+            .content3{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin: 100px 0;
+            }
+            .content3 .article__section{
+                width: 40%;
+            }
+            .content3 .subtitulo, .paragrafo{
+                margin-left: 100px;
+            }
+            .content3 .paragrafo{
+
+            }
+           .list-info{
+               margin: 10px 100px;
+           }
+           .list-info li{
+               margin: 50px 0;
+           }
+           .list-info a{
+               font-size: 29px;
+               text-decoration: none;
+               color: #474747;
+               transition: all .5s ease-in-out;
+           }
+           .list-info a:hover{
+                color: rgb(228, 228, 124);
+           }
+           .content3 .article__section, .content-video{
+                display: inline-block;
+                
+           }
+           .content3 .article__section{
+               min-height: 350px;
+               position: relative;
+               bottom: 140px;
+           }
+           .content-video{
+               width: 50%;
+               min-height: 250px;
+               margin-left: 30px;
+               border-left: 3px solid rgb(212, 212, 28);
+               padding-left: 50px;
+               font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+              
+           }
+           .content-video iframe{
+               border-radius: 10px;
+               margin: 20px 0 20px 90px;
+           }
+           .content-video .subtitulo{
+               color: #474747;
+               text-align: left;
+           }
+           .content-video__subtitulo{
+                color: #474747;
+           }
+           .content-video__paragrafo{
+               color: #acacac;
+               font-size: 20px;
+               line-height: 30px;
+               text-align: center;
+           }
+           .footer{
+               background-color: black;
+               height: 100px;
+               color: #fff;
+               font-size: 30px;
+               text-align: center;
+               padding-top: 50px;
+           }
+        </style>
+    </head>
+    <body>
+        <header class='header'>
+            <h1 id='titulo'>Soco a 80km/h: Conheça o Stomatopoda</h1>
+
+            <nav class='nav-menu'>
+                <ul>
+                    <li><a href="">Página Inicial</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <article class="article">
+            <img src="./01.jpeg" alt="foto do animal Stomatopoda">
+            <section class='article__section'>
+                
+                <h2 class="subtitulo">Fatos sobre o Stomatopoda</h2>
+                <p class="paragrafo">
+                    Stomatopoda (ou estomatópode), chamados popularmente de tamarutacas ou de lacraias-do-mar no Brasil, é uma ordem de crustáceos marinhos da subclasse Hoplocarida, que agrupa cerca de 400 espécies, caracterizadas principalmente pela morfologia da segunda pata torácica, que é modificada em apêndice subquelado, lembrando uma pata de louva-a-deus.[2]
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, sed harum. Et beatae modi accusantium delectus, consequuntur perferendis corporis ea. Error placeat ea architecto quasi, tempore unde nemo sapiente laudantium?
+                </p>
+            </section>
+            <div class='effect-paralax'>
+
+            </div>
+
+            <section class='article__section'>
+                <div class='content'>
+                    <h2 class="subtitulo">Descrição</h2>
+                    <p class='paragrafo'>
+                        Os <span>Odontodactylus</span> scyllarus são predadores ativos que caçam presas com o auxílio de um sentido de visão muito apurado e capaz de interpretar polarização no espectro ultravioleta e infravermelho). Apresentam uma grande variação de tamanho, que pode ir de poucos milímetros até aproximadamente 40 cm nas espécies maiores. Eles vivem em fundo consolidado, lodoso ou ainda arenoso, onde cavam seus buracos ou aproveitam-se dos orifícios deixados por outros animais para neles se instalar. São animais exclusivamente carnívoros, alimentando-se de camarões, caranguejos, moluscos, peixes e até mesmo outros da mesma ordem. O segundo par de patas, muito desenvolvido, é usado tanto para atacar a presa como para se defender. O urópodo, quando aberto, também funciona para defesa, como um escudo, fechando a galeria em que o animal esteja instalado. A fêmea desova no local onde se abriga e, em caso de perigo, enrola os ovos como uma bola, prendendo-os junto ao corpo até encontrar um abrigo mais protegido.
+
+                        Também conhecidas como esquilas ou lagosta-boxeadora, espalhadas pelas costas dos mares tropicais e subtropicais. Além das patas, elas apresentam uma silhueta característica, devido ao grande comprimento aparentemente de seu abdómen. Os ovos ficam ligados por uma massa gelatinosa que a mãe carrega contra o ventre até que eclodem, limpando-os sem parar.
+
+                        São animais que apresentam comportamentos sociais muito variados, desde ameaças visuais contra predadores até comportamentos de côrte. De acordo com a anatomia da sua pata raptorial é possível distinguir entre dois grupos funcionais, as perfuradoras (spearers) ou as esmagadoras (smashers), sendo que cada um dos tipos apresenta sua própria variação comportamental e até mesmo de habitat.
+
+                         (equivalente a 720 km/h) e uma pressão de impacto de 600 N/cm².[3] Essa força esmagadora é a responsável pelo seu título de "lagosta-boxeadora" e é capaz de facilmente quebrar a carapaça de um caranguejo, as conchas duras e calcificadas de gastrópodes ou até mesmo quebrar o vidro reforçado de um aquário.[4][5]
+
+                    </p>
+
+                    <table class='tbl-classificacion'>
+                        <caption>Classificação Científica</caption>
+                        <thead>
+                            <tr>
+                                <th>Reino</th>
+                                <th>Filo</th>
+                                <th>Subfilo</th>
+                                <th>Classe</th>
+                                <th>Subclasse</th>
+                                <th>Ordem</th>
+                            </tr>
+                        </thead>
+                       
+                        <tbody>
+                            <tr>
+                                <td>Animalia</td>
+                                <td>Arthropoda</td>
+                                <td>Crustacea</td>
+                                <td>Malacostraca</td>
+                                <td>Hoplocarida</td>
+                                <td>Stomatopoda Latreille, 1817</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                           <tr>
+                               <td colspan="6"><a href="https://pt.wikipedia.org/wiki/Stomatopoda">Mais informações</a></td>
+                           </tr> 
+                        </tfoot>
+                    </table>
+                </div>
+            
+            </section>
+
+            
+
+            <div class="content2"> 
+                <h2 class='content2-subititulo'>Reino do Stomatopoda</h2>
+                <section class='article__section'>
+                    <img src="./03.jpg" alt="foto do Stomatopoda">
+                    <h2 class='subtitulo'>Animalia</h2>
+                    <p class='paragrafo'>
+                        <span class='bold'>Animalia</span> Animalia, Animal ou Metazoa[1] é um reino biológico composto por seres vivos pluricelulares, eucariontes, heterotróficos, cujas células formam tecidos biológicos, com capacidade de responder ao ambiente (possuem tecido nervoso) que os envolve ou, por outras palavras, pelos animais.[2]
+    
+                        A maioria dos animais possui um plano corporal que se determina à medida que se tornam maduros e, exceto em animais que metamorfoseiam, esse plano corporal é estabelecido desde cedo em sua ontogenia quando embriões. O estudo científico dos animais é chamado zoologia, que tradicionalmente estudava, não só os seres vivos com as características descritas acima, mas também os protozoários. Como resultado de estudos filogenéticos, consideram-se os Protistas como um grupo separado dos animais.[3]
+                    </p>
+                </section>
+
+                <section class='article__section'>
+                    <img src="./04.jpeg" alt="foto do Stomatopoda">
+                    <h2 class='subtitulo'>Arthropoda</h2>
+                    <p class='paragrafo'>
+                        <span class="bold">Artrópodes</span>(Arthropoda, do grego arthros (ἄρθρον), articulado e podos (ποδός), pés) são um filo de animais invertebrados que possuem exoesqueleto rígido e vários pares de apêndices articulados, cujo número varia de acordo com a classe.
+
+                        Compõem o maior filo de animais existentes, representados por animais como os gafanhotos (insetos), as aranhas (aracnídeos), os caranguejos (crustáceos), as centopeias (quilópodes) e os piolhos-de-cobra (diplópodes). Têm cerca de um milhão de espécies descritas, e estima-se que os representantes deste filo equivalem a cerca de 84% de todas as espécies de animais conhecidas pelo homem.[1] Possuem uma ampla gama de cores e formatos, e no que diz respeito ao tamanho, alguns vão desde as formas microscópicas, como no plâncton (com menos de 1/4 de milímetro), até crustáceos com mais de 3 metros de espessura.[
+                    </p>
+                </section>
+
+                <section class='article__section'>
+                    <img src="./05.jpg" alt="foto do Stomatopoda">
+                    <h2 class='subtitulo'>Artrópode</h2>
+                    <p class='paragrafo'>
+                        <span class="bold">Artrópodes</span>(Arthropoda, do grego arthros (ἄρθρον), articulado e podos (ποδός), pés) são um filo de animais invertebrados que possuem exoesqueleto rígido e vários pares de apêndices articulados, cujo número varia de acordo com a classe.
+
+                        Compõem o maior filo de animais existentes, representados por animais como os gafanhotos (insetos), as aranhas (aracnídeos), os caranguejos (crustáceos), as centopeias (quilópodes) e os piolhos-de-cobra (diplópodes). Têm cerca de um milhão de espécies descritas, e estima-se que os representantes deste filo equivalem a cerca de 84% de todas as espécies de animais conhecidas pelo homem.[1] Possuem uma ampla gama de cores e formatos, e no que diz respeito ao tamanho, alguns vão desde as formas microscópicas, como no plâncton (com menos de 1/4 de milímetro), até crustáceos com mais de 3 metros de espessura.[
+                    </p>
+                </section>
+
+            
+            </div> 
+
+            <div class="content3"> 
+                <section class='article__section'>
+                    <h2 class='subtitulo'>Bibliográfia</h2>
+                    <p class='paragrafo'>fontes sobre o conteúdo</p>
+                    <ul class='list-info'>
+                        <li><a href="https://www.nationalgeographic.com/science/phenomena/2014/07/03/natures-most-amazing-eyes-just-got-a-bit-weirder/">Wikipedia</a></li>
+                        <li><a href="https://theoatmeal.com/comics/mantis_shrimp">Oatmeal</a></li>
+                        <li><a href="https://www.nationalgeographic.com/science/article/natures-most-amazing-eyes-just-got-a-bit-weirder">National Geographic</a></li>
+                    </ul>
+                </section>
+
+
+                <section class='content-video'>
+                    <h2 class="content-video__subtitulo">Nature’s Most Amazing Eyes Just Got A Bit Weirder</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/E0Li1k5hGBE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                    <p class="content-video__paragrafo">
+                        Stomatopoda (ou estomatópode), chamados  lacraias-do-mar no Brasil, é uma ordem de crustáceos marinhos da subclasse Hoplocarida, que agrupa cerca de 400 espécies, caracterizadas principalmente pela morfologia da segunda pata torácica, que é modificada em apêndice subquelado, lembrando uma pata de louva-a-deus.[2]
+                    </p>
+                </section>
+            </div>
+        </article>
+     
+        <footer class="footer">
+           
+            <h3>Stomatopoda</h3>
+        </footer>
+
+    </body>
+</html>

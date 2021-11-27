@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .section-ranck{
+            width: 80%;
+            margin: 50px auto;
+        }
+        .section-ranck ul{
+            margin: 100px 0;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .section-ranck ul li{
+            padding: 15px 10px;
+            width: 150px;
+        }
+        .section-ranck ul li{
+            display: inline-block;
+        }
+        .section-ranck ul li:nth-child(1){
+            display: block;
+            margin: 0 110px;
+            width: 100px;
+            background-color: gold;
+            text-align: center;
+        }
+        .section-ranck ul li:nth-child(2){
+            background-color: #474747;
+            color: #fff;
+        }
+        .section-ranck ul li:nth-child(3){
+            background-color: #d6754e;
+            color: #fff;
+        }
+        h3{
+            text-align: center;
+        }
+        .list-hanck {
+            margin: 20px 0;
+        }
+        .list-hanck li{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <header>
+          <h1>Hackathon Results</h1>
+        </header>
+        <section class='section-ranck'>
+          <ul>
+            <li class="first">1º - Equipe 1</li>
+            <li class="second">2º - Equipe 2</li>
+            <li class="third">3º - Equipe 3</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Premiação Primeiro Lugar:</h3>
+          <ul class="list-hanck">
+            <li>| R$ 1000,00 por integrante da equipe |</li>
+            <li>| Bootcamp de 2 meses com possibilidade de contratação |</li>
+          </ul>
+          <h3>Premiação Segundo Lugar:</h3>
+          <ul class="list-hanck">
+            <li>| R$ 600,00 por integrante da equipe |</li>
+            <li>| Participação no processo seletivo para o Bootcamp |</li>
+          </ul>
+          <h3>Premiação Terceiro Lugar:</h3>
+          <ul class="list-hanck">
+            <li>| R$ 300,00 por integrante da equipe |</li>
+            <li>| Participação no processo seletivo para o Bootcamp |</li>
+          </ul>
+        </section>
+      </body>
+
+    <script>
+        let url = 'https://economia.awesomeapi.com.br/last/USD-BRL';
+
+        let dolarToday = fetch(url)
+            .then((getValueDolar)=> getValueDolar.json())
+            .then((valueDolar)=>{
+                return valueDolar;
+            });
+            
+            let v = dolarToday.json();
+            
+            
+    </script>
+    
+    <a class='btn' href="">Click no link abaixo</a>
+</body>
+</html>
