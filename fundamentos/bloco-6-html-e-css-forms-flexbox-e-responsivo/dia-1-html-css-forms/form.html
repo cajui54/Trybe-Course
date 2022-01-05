@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+    <form action="">
+
+        <fieldset>
+            <input type="text" maxlength="40" required>
+            <input type="email" maxlength="50" required> 
+            <input type="text" maxlength="11" required>
+            <input type="text" maxlength="200" required>
+            <input type="text" maxlength="28" required>
+            <select id='cmbEstados' required> </select>
+           
+            <div>
+                <label for="rdHouse">
+                    Casa
+                    <input type="radio" id="rdHouse" name="moradia" value="casa">
+                </label>
+
+                <label for="rdAp">
+                    Apartamento
+                    <input type="radio" name="moradia" id="rdAp" value="apartamento">
+                </label>
+                
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <textarea row="50" column="50" maxlength="1000" required></textarea>
+            <input type="text" maxlength="40" required>
+
+            <input type="text" required maxlength="40">
+            <input type="text" required maxlength="500">
+            <input type="text" id="input-date" placeholder="dd/mm/aaaa" maxlength="10">
+
+        </fieldset>
+        <button>Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+    
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
