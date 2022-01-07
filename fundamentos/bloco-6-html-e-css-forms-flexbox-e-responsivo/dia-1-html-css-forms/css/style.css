@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(248, 248, 248);
+}
+#form{
+    width: 80%;
+    margin: 50px auto;
+}
+.btns-container{
+    margin-top: 50px;
+}
