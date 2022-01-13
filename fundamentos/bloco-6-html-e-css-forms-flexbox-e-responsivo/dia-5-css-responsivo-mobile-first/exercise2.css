@@ -1,0 +1,221 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  *{
+      margin: 0;
+      padding: 0;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  header{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+  header p{
+    margin: 0 50px;
+    text-shadow: 1px 5px 5px blueviolet;
+    font-size: 20px;
+    font-weight: bold;
+}
+  .aside-one ul{
+      list-style: none;
+  }
+  footer{
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+}
+footer p{
+    margin: 10px auto;
+    padding: 9px;
+}
+
+  @media screen and (max-width: 414px){
+    header{
+        margin-bottom: 100px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+    }
+    header p{
+        margin: 0 15px;
+        font-weight: bold;
+        font-size: 15px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    header nav{
+        display: none;
+    }
+    .aside-one{
+       
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     }
+     h2{
+         margin: 20px 0;
+         text-align: center;
+     }
+     .aside-one ul{
+         width: 80%;
+         margin: 50px auto;
+         list-style: none;
+         font-size: 20px;
+     }
+     .aside-one li{
+         margin: 15px 5px;
+     }
+     .aside-two{
+         margin: 50px 0;
+     }
+     .aside-two ul{
+        width: 80%;
+        margin: 50px auto;
+        list-style: none;
+     }
+     .distak{
+         color:rgb(0, 0, 0);
+         font-weight: bold;
+         font-size: 20px;
+     }
+     .aside-two li{
+        margin: 10px 5px;
+        color: rgb(82, 82, 82);
+     }
+     .main-content h1{
+        text-align: center;
+        margin: 30px auto
+     }
+     .main-content p{
+         width: 80%;
+         margin: 50px auto;
+         letter-spacing: 1.3px;
+         text-align: center;
+         line-height: 25px;
+         font-size: 17px;
+
+     }
+
+  }
+  @media screen and (min-width: 768px) and (max-width: 1023px){
+
+    header p{
+        margin: 0 50px;
+        text-shadow: 1px 5px 5px blueviolet;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    header nav{
+       
+    }
+    header nav ul{
+        min-width: 300px;
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        font-size: 25px;
+        color:blueviolet;
+        font-weight: bold;
+    }
+    .aside-one h2{
+        text-align: center;
+        margin: 50px 0;
+        font-size: 30px;
+        color: blueviolet;
+    }
+    .aside-one ul{
+        width: 50%;
+        margin: 50px auto;
+    }
+    .aside-one li{
+        margin: 10px 5px;
+        font-size: 25px;
+    }
+    .aside-two{
+        margin: 100px 0;
+    }
+    .aside-two h2{
+        margin: 80px 0;
+        text-align: center;
+        font-size: 35px;
+    }
+    .aside-two ul{
+        width: 80%;
+        margin: 50px auto;
+        font-size: 20px;
+    }
+    .aside-two li{
+        margin: 20px 100px ;
+    }
+    .main-content h1{
+        margin-left: 30px;
+    }
+    .main-content p{
+        margin: 30px auto;
+        width: 80%;
+        font-size: 25px;
+        color: rgb(122, 122, 122);
+    }
+
+  }
+  @media  screen and (min-width: 1024px) {
+        header ul{
+            display: flex;
+            min-width: 500px;
+            justify-content: space-evenly;
+            list-style-type: none;
+            font-size: 23px;
+        }
+        .container-aside{
+            float: right;
+        }
+        .aside-one {
+        }
+        .aside-one h2{
+            text-align: center;
+            margin: 100px 0;
+            color: rgb(75, 75, 75);
+            font-size: 50px;
+        }
+        .aside-one ul{
+            margin: 60px auto;
+            font-size: 25px;
+        }
+        .aside-one li{
+            margin: 20px;
+        }
+        .aside-two{
+
+        }
+        .aside-two  h2{
+            color: rgb(82, 82, 82);
+            margin: 20px 20px;
+            text-align:left;
+        }
+        .aside-two ul{
+            list-style: none;
+        }
+        .aside-two li{
+            margin: 20px;
+            color: rgb(102, 102, 102);
+        }
+        .main-content{
+            color: gray;
+            width: 60%;
+            margin: 200px 15px;
+            text-align: center;
+            word-spacing: 5px;
+            letter-spacing: 1.1px;
+            line-height: 20px;
+        }
+        .main-content p{
+            margin-top: 50px;
+            padding: 10px;
+        }
+  }
